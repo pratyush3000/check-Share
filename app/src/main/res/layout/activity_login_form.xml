@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".Login_form"
+    android:orientation="horizontal">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="359dp"
+        android:layout_height="517dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:passwordToggleEnabled="true">
+
+            <Button
+                android:id="@+id/buttony"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Login"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:textSize="20sp"
+                android:onClick="btn_sign_up"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
